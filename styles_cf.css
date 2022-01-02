@@ -1,0 +1,423 @@
+body{
+    margin: 0px;
+}
+
+.scrl{
+    display: none;
+}
+
+header{
+    position: fixed;
+    top: 0px;
+    left:0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    padding: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 2;
+}
+
+header a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: White;
+}
+
+.sidebar-button{
+    padding-right: 10px;
+    flex-grow: 0;
+}
+
+.location{
+    flex-grow: 1;
+    font-size: 34px;
+}
+
+.chores-list{
+    flex-grow: 0;
+}
+
+#chore-head{
+    width: 100%;
+    background-color: rgb(0, 170, 0);
+}
+
+.data-c{
+    text-align: left;
+    width: 60%;
+    margin: auto;
+}
+
+form #chore-type{
+    border: none;
+    margin-top: 200px;
+    margin-bottom: 300px;
+    background-color: rgb(0, 170, 0);
+    color: white;
+    width:280px;
+    font-size: 36px;
+}
+
+form #chore-type option{
+    background-color: white;
+    color: rgb(0, 170, 0);
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+form #chore-type:focus{
+    outline: none;
+}
+
+#headwave{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 350px;
+    left:0px;
+}
+
+#hwmobile{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 350px;
+    left:0px;
+    display: none;
+}
+
+form{
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+}
+
+input{
+    display: block;
+    margin:auto;
+}
+
+form input[type="number"]{
+    border: none;
+    border-bottom: rgb(0, 170, 0) solid 2px;
+    font-size: 24px;
+    width: 150px;
+}
+
+form input[type="text"]{
+    border: none;
+    border-bottom: rgb(0, 170, 0) solid 2px;
+    font-size: 24px;
+    margin-left: 30px;
+    width: 450px;
+}
+
+form input:focus{
+    outline: none;
+    border-bottom: rgb(117, 211, 117) solid 2px;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    font-size: 24px;
+    font-weight: 50;
+    padding: 25px;
+    display: block;
+}
+
+textarea{
+    resize: none;
+    border: none;
+    border-bottom: 2px rgb(0, 170, 0) solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    width: 100%;
+    display: block;
+    margin-left: 30px;
+}
+
+textarea:focus{
+    outline:none;
+    border-bottom: 2px rgb(0, 150, 0) solid;
+}
+
+#pcontainer{
+    display: flex;
+    width:60px;
+    margin: auto;
+}
+
+#pcontainer label{
+    padding-left: 0px;
+}
+
+#payment{
+    font-size: 24px;
+    width: 60px;
+}
+
+.pm-container{
+    display: flex;
+    align-items: center;
+}
+
+#payment-method{
+    font-size: 24px;
+    width: 180px;
+    height: 48px;
+}
+
+.pm-container select:focus{
+    outline: none;
+}
+
+input[type=submit]{
+    border: none;
+    color: white;
+    background-color: rgb(0, 170, 0);
+    font-size: 36px;
+    padding: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
+    margin-top: 25px;
+    margin-bottom: 55px;
+    border-radius: 10px;
+}
+
+#chore_name{
+    display: none;
+    width: 100%;
+}
+
+#chore_name_i{
+    display: none;
+}
+
+.sidebar{
+    position:fixed;
+    top: 0px;
+    background-color: white;
+    width: 400px;
+    height:100%;
+    left:-400px;
+    z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar a{
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar-head{
+    display: block;
+    background-color: rgb(35, 180, 35);
+}
+
+.sidebar-head #uname{
+    display: block;
+    padding-left: 20px;
+    padding-top: 140px;
+    color: white;
+    font-size: 42px;
+}
+
+.sidebar-head #address{
+    display: block;
+    padding-left: 20px;
+    padding-top: 18px;
+    padding-bottom: 40px;
+    color: rgb(163, 236, 163);
+    font-size: 24px;
+}
+
+/*changed*/
+.sidebar #wave{
+    display: block;
+    z-index: 102;
+    position: relative;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    margin-top: -65px;
+}
+
+.sidebar ul{
+    width: 70%;
+    padding: 0px;
+}
+
+.sidebar li{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    margin: 20px;
+    margin-left: 5px;
+}
+
+.sidebar ul img{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.sidebar .foot{
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    border-top: 2px solid darkgray;
+    width: 90%;
+    left: 5%;
+}
+
+.sidebar .foot a{
+    display: block;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sidebar .foot .log-out{
+    color: red;
+}
+
+
+#closeSidebar{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 20px;
+    top: 20px;
+}
+
+#closeSidebar:hover{
+    opacity: 70%;
+}
+
+.cover-side{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0);
+    opacity: 0%;
+    display: none;
+    z-index: 3;
+}
+
+@media screen and (max-width: 770px){
+    .sidebar-button{
+        padding-right: 3%;
+        padding-left: 3%;
+        flex-grow: 0;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .sidebar-button{
+        padding-right: 3%;
+        padding-left: 3%;
+        flex-grow: 0;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .sidebar{
+        position:fixed;
+        top: 0px;
+        background-color: white;
+        width: 280px;
+        height:100%;
+        left:-400px;
+        z-index: 100;
+    }
+    
+
+    .sidebar a{
+        color: gray;
+    }
+    
+    .sidebar-head #uname{
+        display: block;
+        padding-left: 20px;
+        padding-top: 70px;
+        color: white;
+        font-size: 32px;
+    }
+    
+    .sidebar-head #address{
+        display: block;
+        padding-left: 20px;
+        padding-top: 18px;
+        padding-bottom: 40px;
+        color: rgb(163, 236, 163);
+        font-size: 20px;
+        width: 60%;
+    }
+    .sidebar #wave{
+        display: block;
+        z-index: 102;
+        position: relative;
+        bottom: 0px;
+        height: 100px;
+        width: 100%;
+        margin-top: -65px;
+    }
+
+    input{
+        display: block;
+        margin:0px;
+    }
+
+    textarea{
+        resize: none;
+        border: none;
+        border-bottom: 2px rgb(0, 170, 0) solid;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        width: 100%;
+        display: block;
+        margin: 0px;
+    }
+
+    #pcontainer {
+        display: flex;
+        width: 60px;
+        margin: 0px;
+    }  
+    
+    label{
+        padding-left: 0px;
+    }
+
+    input[type=submit]{
+        margin: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 25px;
+        margin-bottom: 55px;
+    }
+
+    #payment-method{
+        width: 90px;
+    }
+
+    #headwave{
+        display:none;
+    }
+    
+    #hwmobile{
+        height: 200px;
+        display: block;
+        z-index: 1;
+    }
+
+    form input[type="text"] {
+        margin-left: 0px;
+    }
+}

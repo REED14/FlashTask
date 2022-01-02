@@ -1,0 +1,785 @@
+body{
+    margin: 0px;
+    height: 100%;
+}
+
+a{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name_and_logo{
+    display: flex;
+    margin-bottom: 5%;
+}
+
+@font-face {
+    font-family: Koryaka;
+    src: url("Fonts/KoryakaFree-Rounded.otf");
+}
+
+.name_and_logo h1
+{
+    color: white;
+    padding-top: 10px;
+    font-size: 54px;
+    margin-left: 30px;
+    font-family: Koryaka;
+}
+
+.app_description{
+    color: white;
+    font-size: 32px;
+    width: 40%;
+    text-align: center;
+}
+
+.page-head{
+    height: 450px;
+    margin: 0px;
+    background-image: linear-gradient(#3bcc2e,#1daf52);
+    padding: 2.5%;
+    padding-left: 9%;
+    padding-bottom: 0px;
+}
+
+.inside-head{
+    width: 50%;
+}
+
+.wave
+{
+    z-index: 100;
+    position: absolute;
+    margin: 0px;
+    top: 220px;
+    height: 300px;
+    width: 100%;
+}
+
+.info_location{
+    text-align: center;
+    padding-right: 20%;
+    padding-left: 20%;
+    margin: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.info_location a{
+    text-align: center;
+    color: rgb(184, 184, 184);
+    font-size: 32px;
+}
+
+.mwave{
+    display: none;
+}
+
+#register_form{
+    width: 60%;
+    margin: auto;
+    margin-top: 45px;
+    text-align: center;
+    display: block;
+}
+
+input{
+    display: block;
+    width: 100%;
+    margin:10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 24px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: limegreen 2px solid;
+}
+
+input:focus{
+    outline: none;
+}
+
+form div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+form div input{
+    width: 46%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+form input[type=submit]{
+    border: none;
+    width: 20%;
+    margin:auto;
+    margin-top: 20px;
+    padding: 15px;
+    background: #25b65a;
+    font-size: 32px;
+    border-radius: 5px;
+    color: white;
+    transition: 0.5s linear;
+}
+
+input[type=submit]:hover{
+    background: white;
+    color: #25b65a;
+    border: 2px solid #25b65a;
+}
+
+#location{
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    column-gap: 5%;
+    grid-template-areas: 
+    "a1 a2 a2" 
+    "a3 a4 a5";
+    width: 100%;
+}
+
+#location input{
+    width: 100%;
+    padding-right: 0px;
+}
+
+#location button{
+    position: absolute;
+    background: none;
+    border: none;
+    right: 5px;
+    bottom:15px;
+    opacity: 50%;
+}
+
+#location button:hover{
+    opacity: 40%;
+}
+
+#location button img{
+    width: 30px;
+}
+
+#login_form{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+#login_form input[type=text]{
+    width: 100%;
+}
+
+#login_form input[type=password]{
+    width: 100%;
+}
+
+#login_form input[type=submit]{
+    background: white;
+    color: #25b65a;
+    border: 2px solid #25b65a;
+    transition: 0.5s linear;
+}
+
+#login_form input[type=submit]:hover{
+    background: #25b65a;
+    color: white;
+}
+
+#notenough{
+    color: darkred;
+    background: rgb(255, 179, 179);
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+    display: none;
+}
+
+#notthesame{
+    color: darkred;
+    background: rgb(255, 179, 179);
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+    display: none;
+}
+#notstrong{
+    color: darkred;
+    background: rgb(255, 179, 179);
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+    display: none;
+}
+
+#register_form{
+    display: none;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    z-index: 102;
+}
+
+#login_form{
+    display: none;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    z-index: 102;
+}
+
+#logsign{
+    width: 40%;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    text-align: center;
+    position: relative;
+    z-index: 105;
+}
+
+#logsign button{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 24px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    z-index: 105;
+}
+
+#signup{
+    border: solid 2px #25b65a;
+    background-color: #25b65a;
+    border-radius: 5px;
+    transition: 0.2s linear;
+    color: white;
+}
+
+#login{
+    border: solid 2px #25b65a;
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.2s linear;
+    color: #25b65a;
+}
+
+.backbtn{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 24px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: solid 2px #25b65a;
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.2s linear;
+    color: #25b65a;
+}
+
+.backbtn:hover{
+    border: solid 2px #25b65a;
+    background-color: #25b65a;
+    border-radius: 5px;
+    transition: 0.2s linear;
+    color: white;
+}
+
+#signup:hover{
+    border: solid 2px #25b65a;
+    background-color: white;
+    border-radius: 5px;
+    color: #25b65a;
+}
+
+#login:hover{
+    border: solid 2px #25b65a;
+    background-color: #25b65a;
+    border-radius: 5px;
+    color: white;
+}
+
+.info_commission{
+    margin-top: 50px;
+}
+
+.info_commission a{
+    margin: auto;
+    color: rgb(172, 172, 172);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name_and_logo img{
+    margin-left: 10px;
+}
+
+
+#checkAnimation{
+    width: 30%;
+    position: absolute;
+    z-index: 4;
+    top: 48px;
+    right: 8%;
+    z-index: 101;
+}
+
+#l12{
+    animation: LineAnim 2s cubic-bezier(0.6,.0,0.3,1) infinite alternate;
+}
+
+#l13{ 
+    animation: LineAnim 2s cubic-bezier(.54,0,.45,1) infinite alternate;
+}
+
+#l14{
+    animation: LineAnim 2s cubic-bezier(.32,0,.63,.99) infinite alternate;
+}
+
+#l15{
+    animation: LineAnim 2s cubic-bezier(.1,0,.91,.99) infinite alternate;
+}
+
+@keyframes LineAnim{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 25%;
+    }
+}
+
+#chk1{
+    animation: Checks 2s cubic-bezier(0.6,.0,0.3,1) infinite alternate;
+}
+
+#chk2{
+    animation: Checks 2s cubic-bezier(.54,0,.45,0.8) infinite alternate;
+}
+
+#chk3{
+    animation: Checks 2s cubic-bezier(.32,0,.63,.8) infinite alternate;
+}
+
+#chk4{
+    animation: Checks 2s cubic-bezier(.1,0,.91,.8) infinite alternate;
+}
+
+@keyframes Checks{
+    0%{
+        transform: scaleX(0.75);
+        opacity: 0%;
+    }
+    10%{
+        transform: scaleX(0.75);
+        opacity: 0%;
+    }
+    80%{
+        opacity: 50%;
+    }
+    90%{
+        transform: scaleX(1);
+        opacity: 100%;
+    }
+    100%{
+        transform: scaleX(1.03);
+    }
+}
+
+@media screen  and (max-width:920px) and (min-width:692px){
+    #checkAnimation{
+        right: 2%;
+        width: 50%;
+    }
+}
+
+@media screen  and (max-width:692px){
+    #checkAnimation{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:796px){
+    #location{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        column-gap: 5%;
+        grid-template-areas: 
+        "a1 a2" 
+        "a3 a4"
+        "a5 a5";
+    }
+    #location input{
+        width: 100%;
+    }
+
+    #location #pcode{
+        width: 100%;
+    }
+
+    a{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1253px) and (min-width:1024px){
+    .app_description{
+        font-size: 28px;
+    }
+
+    .name_and_logo h1{
+        font-size: 45px;
+        padding-top: 20px;
+    }
+
+    .name_and_logo{
+        margin-left: -25px;
+    }
+
+    .name_and_logo img{
+        height: 120px;
+        width: 120px;
+        margin-left: 10px;
+    }
+
+    .info_location{
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+
+    .info_location a{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width:1252px) and (min-width:544px){
+
+    .wave{
+        height: 200px;
+        top: 300px;
+    }
+
+    .page-head{
+        padding-top: 4%;
+        height: 425px;
+    }
+
+    .app_description{
+        font-size: 26px;
+        margin-left: 10px;
+    }
+
+    .name_and_logo h1{
+        font-size: 38px;
+        margin-left: 10px;
+        padding-top: 20px;
+    }
+
+    .name_and_logo{
+        margin-left: -30px;
+    }
+
+    .name_and_logo img{
+        height: 120px;
+        width: 120px;
+        margin-left: 10px;
+    }
+
+    .info_location{
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+
+    .info_location a{
+        font-size: 28px;
+    }
+
+    form input[type=submit]{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:543px) and (min-width: 403px){
+
+    .wave{
+        display: none;
+        height: 150px;
+        top: 310px;
+    }
+
+    .mwave
+    {
+        display: block;
+    }
+
+    .inside-head
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .page-head{
+        align-content: center;
+        padding: 0px;
+        height: 450px;
+    }
+
+    .app_description{
+        display: none;
+    }
+
+    .name_and_logo h1{
+        font-size: 36px;
+        margin-left: 10px;
+
+    }
+
+    .name_and_logo{
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-left: -30px;
+    }
+
+    .name_and_logo img{
+        height: 90px;
+        width: 90px;
+        margin-left: 40px;
+    }
+
+    .info_location{
+        margin-top: 15%;
+        padding-right: 18%;
+        padding-left: 18%;
+        margin-bottom: 30px;
+    }
+
+    .info_location a{
+        font-size: 24px;
+    }
+
+    input{
+        font-size: 18px;
+    }
+
+    form input[type=submit]{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:402px) and (min-width: 324px){
+
+    .location_form{
+        margin-top: 25px;
+    }
+
+    .wave{
+        display: none;
+        height: 150px;
+        top: 310px;
+    }
+
+    .mwave
+    {
+        display: block;
+    }
+
+    .inside-head
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .page-head{
+        align-content: center;
+        padding: 0px;
+        height: 450px;
+    }
+
+    .app_description{
+        display: none;
+    }
+
+    .name_and_logo h1{
+        font-size: 36px;
+        margin-left: 10px;
+
+    }
+
+    .name_and_logo{
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-left: -30px;
+    }
+
+    .name_and_logo img{
+        height: 90px;
+        width: 90px;
+        margin-left: 30px;
+    }
+
+    .info_location{
+        margin-top: 15%;
+        padding-right: 15%;
+        padding-left: 15%;
+        margin-bottom: 30px;
+    }
+
+    .info_location a{
+        font-size: 24px;
+    }
+
+    form input[type=submit]{
+        width: 100%;
+    }
+
+    input{
+        font-size: 16px;
+    }
+
+    form div{
+        display: block;
+    }
+
+    form div input{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:324px){
+
+    .location_form{
+        margin-top: 25px;
+    }
+
+    .wave{
+        display: none;
+        height: 100px;
+        top: 280px;
+    }
+
+    .mwave
+    {
+        display: block;
+    }
+
+    .inside-head
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .page-head{
+        align-content: center;
+        padding: 0px;
+        padding-left: 20px;
+        height: 380px;
+    }
+
+    .app_description{
+        display: none;
+    }
+
+    .name_and_logo h1{
+        font-size: 28px;
+        margin-left: 10px;
+
+    }
+
+    .name_and_logo{
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-left: -30px;
+    }
+
+    .name_and_logo img{
+        height: 80px;
+        width: 80px;
+        margin-left: 20px;
+    }
+
+    .location_form{
+        margin-top: 20%;
+        margin-left: 13%;
+    }
+
+    .location_form input[type=text]{
+        width: 135px;
+        font-size: 16px;
+    }
+
+    .location_form input[type=submit]{
+        margin-left: 10%;
+        margin-top: 20%;
+    }
+
+    .info_location{
+        margin-top: 15%;
+        padding-right: 15%;
+        padding-left: 15%;
+        margin-bottom: 30px;
+    }
+
+    .info_location a{
+        font-size: 24px;
+    }
+
+    form input[type=submit]{
+        width: 100%;
+    }
+
+    input{
+        font-size: 14px;
+    }
+
+    form div{
+        display: block;
+    }
+
+    form div input{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:680px) and (min-width: 542px){
+    .app_description{
+        font-size: 24px;
+    }
+
+    /*
+    .location_form button{
+        top:-50px;
+        left: 170px;
+        margin-left: 0px;
+    }
+    */
+}

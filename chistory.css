@@ -1,0 +1,96 @@
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: solid 2px grey;
+}
+
+header a{
+    margin-left: 10px;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+}
+
+.unpaid-date{
+    text-align: left;
+    display: block;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(131, 131, 131);
+    font-weight: lighter;
+    padding: 15px;
+}
+
+.unpaid-name{
+    font-size: 24px;
+    color: rgb(82, 82, 82);
+}
+
+.unpaid-price{
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    font-weight: lighter;
+    padding: 15px;
+}
+
+.payment-pair{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
+}
+
+#payment-grid{
+    margin: auto;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+button{
+    border: none;
+    color: white;
+    background-color: rgb(0, 170, 0);
+    font-size: 36px;
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 25px;
+    margin-bottom: 55px;
+    border-radius: 10px;
+    position: relative;
+    margin: auto;
+}
+
+#forbutton{
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    bottom: 20px;
+}
+
+@media screen and (max-width:500px){
+    .unpaid-date{
+        font-size: 18px;
+    }
+    
+    .unpaid-price{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    button{
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,177 @@
+body{
+    margin: 0px;
+    width: 100%;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: solid 2px grey;
+}
+
+header a{
+    margin-left: 10px;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+}
+
+#uname{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+}
+
+#contentblock{
+    height: 100%;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #E5E5E5;
+    display: block;
+    text-align: center;
+    padding-bottom: 12px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+#contentblock a{
+    padding: 12px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(14, 28, 44);
+    display: block;
+}
+
+.usrdata{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#sumcontent{
+    background-color: white;
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+
+#uname a{
+    font-size: 32px;
+}
+
+
+#hasob{
+    background-color: rgb(199, 255, 199);
+    margin: 0px;
+    border-radius: 15px;
+    width:30%;
+}
+
+#hasob a{
+    color:rgb(0, 173, 0);
+}
+
+#hasobno{
+    background-color: rgb(255, 199, 199);
+    margin: 0px;
+    border-radius: 15px;
+    width:30%;
+}
+
+#hasobno a{
+    color:rgb(255, 0, 0);
+}
+
+.btnzone{
+    position: fixed;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#lsa{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    font-size: 24px;
+    margin: auto;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: rgb(0, 173, 0);
+}
+
+#oba{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    font-size: 24px;
+    margin: auto;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: #5433FF;
+}
+
+@media screen and (min-width:768px){
+    .usrdata{
+        display: block;
+    }
+    #contentblock{
+        width: 60%;
+    }
+
+    #hasob{
+        margin: auto;
+    }
+
+    #hasobno{
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .usrdata{
+        display: block;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #contentblock{
+        width: 90%;
+        padding: 0px;
+        padding-top: 10px;
+    }
+
+    #contentblock a{
+        font-size: 22px;
+    }
+
+    #uname a{
+        font-size: 27px;
+    }
+
+    #uname{
+        width: 90%;
+    }
+
+    #hasob{
+        width: 50%;
+        margin: auto;
+    }
+
+    #hasobno{
+        width: 50%;
+        margin: auto;
+    }
+}
