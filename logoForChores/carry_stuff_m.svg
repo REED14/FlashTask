@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FBBB8A;}
+	.st1{fill:#F8971D;}
+	.st2{opacity:0.22;}
+	.st3{fill:#DD5C62;}
+	.st4{fill:#ED2024;}
+	.st5{opacity:0.24;}
+	.st6{fill:#5F9ED6;}
+	.st7{fill:#4582C3;}
+	.st8{opacity:0.28;}
+</style>
+<g id="Layer_3">
+	<rect x="155.1" y="35.7" class="st0" width="214.3" height="214.3"/>
+	<rect x="149.1" y="35.7" class="st1" width="226.5" height="40.6"/>
+	<path class="st2" d="M289.7,121.5h-53.7v-18.4c0-12.4,14-22.4,26.4-22.4h0c12.4,0,27.4,10,27.4,22.4V121.5z"/>
+</g>
+<g id="Layer_1">
+	<rect x="250" y="250" class="st3" width="214.3" height="214.3"/>
+	<rect x="246.9" y="250" class="st4" width="220.5" height="40.6"/>
+	<path class="st5" d="M384,341.3h-53.7v-19.4c0-12.4,14-22.4,26.4-22.4h0c12.4,0,27.4,10,27.4,22.4V341.3z"/>
+</g>
+<g id="Layer_2">
+	<rect x="55.3" y="239.3" class="st6" width="235.7" height="235.7"/>
+	<rect x="47.9" y="239.3" class="st7" width="251.5" height="44.7"/>
+	<path class="st8" d="M205.6,338.4h-63.7V313c0-12.4,19-22.4,31.4-22.4h0c12.4,0,32.4,10,32.4,22.4V338.4z"/>
+</g>
+</svg>
